@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="./typo.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style type="text/css">
+    body {
+      padding:10px;
+    }
+    img {
+      max-width:100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+# 第二篇博客
 
+**朱晓婷**
+
+__不要相信任何名人名言。--鲁迅__
+
+大家好
+
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490933145137&di=40e6bca7a087682cf0d6a482267ac747&imgtype=0&src=http%3A%2F%2Fa2.att.hudong.com%2F37%2F59%2F300326546728132695597021750_950.jpg">
+  </div>
+  
+  <script>
+    var content = document.getElementById('content')
+    var markdown=content.innerHTML
+    var html=marked(markdown)
+    content.innerHTML = html
+  </script>
+</body>
+</html>
